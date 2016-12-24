@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C01897C01E0E199D00320A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897BF1E0E199D00320A9F /* AppDelegate.swift */; };
+		C01897C21E0E199D00320A9F /* RCGRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897C11E0E199D00320A9F /* RCGRootViewController.swift */; };
+		C01897C51E0E199D00320A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01897C31E0E199D00320A9F /* Main.storyboard */; };
+		C01897C71E0E199D00320A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01897C61E0E199D00320A9F /* Assets.xcassets */; };
+		C01897CA1E0E199D00320A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01897C81E0E199D00320A9F /* LaunchScreen.storyboard */; };
+		C01897D51E0E199D00320A9F /* RemoteControlGizmosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897D41E0E199D00320A9F /* RemoteControlGizmosTests.swift */; };
+		C01897E01E0E199D00320A9F /* RemoteControlGizmosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897DF1E0E199D00320A9F /* RemoteControlGizmosUITests.swift */; };
+		C01897EE1E0E47F500320A9F /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897ED1E0E47F500320A9F /* BluetoothSerial.swift */; };
+		C01897F01E0E4A5B00320A9F /* RCGRemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897EF1E0E4A5B00320A9F /* RCGRemoteViewController.swift */; };
+		C01897F31E0E593C00320A9F /* RCGDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01897F11E0E593C00320A9F /* RCGDeviceTableViewCell.swift */; };
+		C01897F41E0E593C00320A9F /* RCGDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01897F21E0E593C00320A9F /* RCGDeviceTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C01897D11E0E199D00320A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01897B41E0E199D00320A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01897BB1E0E199D00320A9F;
+			remoteInfo = RemoteControlGizmos;
+		};
+		C01897DC1E0E199D00320A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01897B41E0E199D00320A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01897BB1E0E199D00320A9F;
+			remoteInfo = RemoteControlGizmos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C01897BC1E0E199D00320A9F /* RemoteControlGizmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControlGizmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01897BF1E0E199D00320A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C01897C11E0E199D00320A9F /* RCGRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCGRootViewController.swift; sourceTree = "<group>"; };
+		C01897C41E0E199D00320A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C01897C61E0E199D00320A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C01897C91E0E199D00320A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C01897CB1E0E199D00320A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01897D01E0E199D00320A9F /* RemoteControlGizmosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlGizmosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01897D41E0E199D00320A9F /* RemoteControlGizmosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlGizmosTests.swift; sourceTree = "<group>"; };
+		C01897D61E0E199D00320A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01897DB1E0E199D00320A9F /* RemoteControlGizmosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlGizmosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01897DF1E0E199D00320A9F /* RemoteControlGizmosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlGizmosUITests.swift; sourceTree = "<group>"; };
+		C01897E11E0E199D00320A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01897ED1E0E47F500320A9F /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		C01897EF1E0E4A5B00320A9F /* RCGRemoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCGRemoteViewController.swift; sourceTree = "<group>"; };
+		C01897F11E0E593C00320A9F /* RCGDeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCGDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		C01897F21E0E593C00320A9F /* RCGDeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCGDeviceTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C01897B91E0E199D00320A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897CD1E0E199D00320A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897D81E0E199D00320A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C01897B31E0E199D00320A9F = {
+			isa = PBXGroup;
+			children = (
+				C01897BE1E0E199D00320A9F /* RemoteControlGizmos */,
+				C01897D31E0E199D00320A9F /* RemoteControlGizmosTests */,
+				C01897DE1E0E199D00320A9F /* RemoteControlGizmosUITests */,
+				C01897BD1E0E199D00320A9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C01897BD1E0E199D00320A9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01897BC1E0E199D00320A9F /* RemoteControlGizmos.app */,
+				C01897D01E0E199D00320A9F /* RemoteControlGizmosTests.xctest */,
+				C01897DB1E0E199D00320A9F /* RemoteControlGizmosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C01897BE1E0E199D00320A9F /* RemoteControlGizmos */ = {
+			isa = PBXGroup;
+			children = (
+				C01897ED1E0E47F500320A9F /* BluetoothSerial.swift */,
+				C01897BF1E0E199D00320A9F /* AppDelegate.swift */,
+				C01897C11E0E199D00320A9F /* RCGRootViewController.swift */,
+				C01897C31E0E199D00320A9F /* Main.storyboard */,
+				C01897C61E0E199D00320A9F /* Assets.xcassets */,
+				C01897C81E0E199D00320A9F /* LaunchScreen.storyboard */,
+				C01897CB1E0E199D00320A9F /* Info.plist */,
+				C01897EF1E0E4A5B00320A9F /* RCGRemoteViewController.swift */,
+				C01897F11E0E593C00320A9F /* RCGDeviceTableViewCell.swift */,
+				C01897F21E0E593C00320A9F /* RCGDeviceTableViewCell.xib */,
+			);
+			path = RemoteControlGizmos;
+			sourceTree = "<group>";
+		};
+		C01897D31E0E199D00320A9F /* RemoteControlGizmosTests */ = {
+			isa = PBXGroup;
+			children = (
+				C01897D41E0E199D00320A9F /* RemoteControlGizmosTests.swift */,
+				C01897D61E0E199D00320A9F /* Info.plist */,
+			);
+			path = RemoteControlGizmosTests;
+			sourceTree = "<group>";
+		};
+		C01897DE1E0E199D00320A9F /* RemoteControlGizmosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C01897DF1E0E199D00320A9F /* RemoteControlGizmosUITests.swift */,
+				C01897E11E0E199D00320A9F /* Info.plist */,
+			);
+			path = RemoteControlGizmosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C01897BB1E0E199D00320A9F /* RemoteControlGizmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01897E41E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmos" */;
+			buildPhases = (
+				C01897B81E0E199D00320A9F /* Sources */,
+				C01897B91E0E199D00320A9F /* Frameworks */,
+				C01897BA1E0E199D00320A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteControlGizmos;
+			productName = RemoteControlGizmos;
+			productReference = C01897BC1E0E199D00320A9F /* RemoteControlGizmos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C01897CF1E0E199D00320A9F /* RemoteControlGizmosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01897E71E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmosTests" */;
+			buildPhases = (
+				C01897CC1E0E199D00320A9F /* Sources */,
+				C01897CD1E0E199D00320A9F /* Frameworks */,
+				C01897CE1E0E199D00320A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C01897D21E0E199D00320A9F /* PBXTargetDependency */,
+			);
+			name = RemoteControlGizmosTests;
+			productName = RemoteControlGizmosTests;
+			productReference = C01897D01E0E199D00320A9F /* RemoteControlGizmosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C01897DA1E0E199D00320A9F /* RemoteControlGizmosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01897EA1E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmosUITests" */;
+			buildPhases = (
+				C01897D71E0E199D00320A9F /* Sources */,
+				C01897D81E0E199D00320A9F /* Frameworks */,
+				C01897D91E0E199D00320A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C01897DD1E0E199D00320A9F /* PBXTargetDependency */,
+			);
+			name = RemoteControlGizmosUITests;
+			productName = RemoteControlGizmosUITests;
+			productReference = C01897DB1E0E199D00320A9F /* RemoteControlGizmosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C01897B41E0E199D00320A9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCG;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Shvier;
+				TargetAttributes = {
+					C01897BB1E0E199D00320A9F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = PGNG7584J8;
+						ProvisioningStyle = Automatic;
+					};
+					C01897CF1E0E199D00320A9F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = PGNG7584J8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C01897BB1E0E199D00320A9F;
+					};
+					C01897DA1E0E199D00320A9F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = PGNG7584J8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C01897BB1E0E199D00320A9F;
+					};
+				};
+			};
+			buildConfigurationList = C01897B71E0E199D00320A9F /* Build configuration list for PBXProject "RemoteControlGizmos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C01897B31E0E199D00320A9F;
+			productRefGroup = C01897BD1E0E199D00320A9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C01897BB1E0E199D00320A9F /* RemoteControlGizmos */,
+				C01897CF1E0E199D00320A9F /* RemoteControlGizmosTests */,
+				C01897DA1E0E199D00320A9F /* RemoteControlGizmosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C01897BA1E0E199D00320A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01897CA1E0E199D00320A9F /* LaunchScreen.storyboard in Resources */,
+				C01897C71E0E199D00320A9F /* Assets.xcassets in Resources */,
+				C01897F41E0E593C00320A9F /* RCGDeviceTableViewCell.xib in Resources */,
+				C01897C51E0E199D00320A9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897CE1E0E199D00320A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897D91E0E199D00320A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C01897B81E0E199D00320A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01897F01E0E4A5B00320A9F /* RCGRemoteViewController.swift in Sources */,
+				C01897C21E0E199D00320A9F /* RCGRootViewController.swift in Sources */,
+				C01897C01E0E199D00320A9F /* AppDelegate.swift in Sources */,
+				C01897F31E0E593C00320A9F /* RCGDeviceTableViewCell.swift in Sources */,
+				C01897EE1E0E47F500320A9F /* BluetoothSerial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897CC1E0E199D00320A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01897D51E0E199D00320A9F /* RemoteControlGizmosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01897D71E0E199D00320A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01897E01E0E199D00320A9F /* RemoteControlGizmosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C01897D21E0E199D00320A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01897BB1E0E199D00320A9F /* RemoteControlGizmos */;
+			targetProxy = C01897D11E0E199D00320A9F /* PBXContainerItemProxy */;
+		};
+		C01897DD1E0E199D00320A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01897BB1E0E199D00320A9F /* RemoteControlGizmos */;
+			targetProxy = C01897DC1E0E199D00320A9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C01897C31E0E199D00320A9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01897C41E0E199D00320A9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C01897C81E0E199D00320A9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01897C91E0E199D00320A9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01897E21E0E199D00320A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01897E31E0E199D00320A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01897E51E0E199D00320A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C01897E61E0E199D00320A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C01897E81E0E199D00320A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteControlGizmos.app/RemoteControlGizmos";
+			};
+			name = Debug;
+		};
+		C01897E91E0E199D00320A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteControlGizmos.app/RemoteControlGizmos";
+			};
+			name = Release;
+		};
+		C01897EB1E0E199D00320A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RemoteControlGizmos;
+			};
+			name = Debug;
+		};
+		C01897EC1E0E199D00320A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PGNG7584J8;
+				INFOPLIST_FILE = RemoteControlGizmosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shvier.RemoteControlGizmosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RemoteControlGizmos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01897B71E0E199D00320A9F /* Build configuration list for PBXProject "RemoteControlGizmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01897E21E0E199D00320A9F /* Debug */,
+				C01897E31E0E199D00320A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01897E41E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01897E51E0E199D00320A9F /* Debug */,
+				C01897E61E0E199D00320A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01897E71E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01897E81E0E199D00320A9F /* Debug */,
+				C01897E91E0E199D00320A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01897EA1E0E199D00320A9F /* Build configuration list for PBXNativeTarget "RemoteControlGizmosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01897EB1E0E199D00320A9F /* Debug */,
+				C01897EC1E0E199D00320A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C01897B41E0E199D00320A9F /* Project object */;
+}
