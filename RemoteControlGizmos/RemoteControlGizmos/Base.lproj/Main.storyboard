@@ -51,7 +51,9 @@
                                 </constraints>
                                 <state key="normal" title="&lt;"/>
                                 <connections>
-                                    <action selector="clickTurnLeft:" destination="maT-P4-gxF" eventType="touchUpInside" id="hNx-Wx-nAq"/>
+                                    <action selector="clickTurnLeftDown:" destination="maT-P4-gxF" eventType="touchDown" id="HFY-pw-mdk"/>
+                                    <action selector="clickTurnLeftUpInside:" destination="maT-P4-gxF" eventType="touchUpInside" id="GEP-VO-Z1O"/>
+                                    <action selector="clickTurnLeftUpOutside:" destination="maT-P4-gxF" eventType="touchUpOutside" id="qDZ-MA-Zz3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vML-5j-ASi">
@@ -62,7 +64,9 @@
                                 </constraints>
                                 <state key="normal" title="&gt;"/>
                                 <connections>
-                                    <action selector="clickTurnRight:" destination="maT-P4-gxF" eventType="touchUpInside" id="JOh-lH-40x"/>
+                                    <action selector="clickTurnRightDown:" destination="maT-P4-gxF" eventType="touchDown" id="uki-i3-u8P"/>
+                                    <action selector="clickTurnRightUpInside:" destination="maT-P4-gxF" eventType="touchUpInside" id="FOO-De-5Ux"/>
+                                    <action selector="clickTurnRightUpOutside:" destination="maT-P4-gxF" eventType="touchUpOutside" id="mmF-te-gBZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKU-l2-9Ys">
@@ -84,7 +88,9 @@
                                 </constraints>
                                 <state key="normal" title="B"/>
                                 <connections>
-                                    <action selector="clickSlowDown:" destination="maT-P4-gxF" eventType="touchUpInside" id="mGQ-Or-qyw"/>
+                                    <action selector="clickSlowDownDown:" destination="maT-P4-gxF" eventType="touchDown" id="47P-hn-6eK"/>
+                                    <action selector="clickSlowDownUpInside:" destination="maT-P4-gxF" eventType="touchUpInside" id="ImU-ZE-H9E"/>
+                                    <action selector="clickSlowDownUpOutside:" destination="maT-P4-gxF" eventType="touchUpOutside" id="ikK-nb-7O3"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5M-fJ-AYt">
@@ -113,7 +119,9 @@
                                 </constraints>
                                 <state key="normal" title="A"/>
                                 <connections>
-                                    <action selector="clickAccelerate:" destination="maT-P4-gxF" eventType="touchUpInside" id="Kkc-tr-86E"/>
+                                    <action selector="clickAccelerateDown:" destination="maT-P4-gxF" eventType="touchDown" id="ptn-5Q-RS6"/>
+                                    <action selector="clickAccelerateUpInside:" destination="maT-P4-gxF" eventType="touchUpInside" id="kDE-tN-KEU"/>
+                                    <action selector="clickAccelerateUpOutside:" destination="maT-P4-gxF" eventType="touchUpOutside" id="ldM-CH-Ana"/>
                                 </connections>
                             </button>
                         </subviews>

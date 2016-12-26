@@ -11,6 +11,8 @@ import CoreBluetooth
 
 class RCGRemoteViewController: UIViewController {
     
+    var timer: Timer!
+    
     override var shouldAutorotate: Bool {
         get {
             return true
@@ -36,20 +38,84 @@ class RCGRemoteViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func clickTurnLeft(_ sender: Any) {
+    func repeatTurnLeft() {
         serial.sendMessageToDevice("l")
     }
     
-    @IBAction func clickTurnRight(_ sender: Any) {
+    func repeatTurnRight() {
         serial.sendMessageToDevice("r")
     }
     
-    @IBAction func clickAccelerate(_ sender: Any) {
+    func repeatAccelerate() {
         serial.sendMessageToDevice("a")
     }
     
-    @IBAction func clickSlowDown(_ sender: Any) {
+    func repeatSlowDown() {
+        serial.sendMessageToDevice("b")
+    }
+    
+    func stop() {
         serial.sendMessageToDevice("s")
+    }
+
+    @IBAction func clickTurnLeftDown(_ sender: UIButton) {
+        serial.sendMessageToDevice("l")
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.repeatTurnLeft), userInfo: nil, repeats: true)
+    }
+
+    @IBAction func clickTurnLeftUpInside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickTurnLeftUpOutside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickTurnRightDown(_ sender: UIButton) {
+        serial.sendMessageToDevice("r")
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.repeatTurnRight), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func clickTurnRightUpInside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickTurnRightUpOutside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickAccelerateDown(_ sender: UIButton) {
+        serial.sendMessageToDevice("a")
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.repeatAccelerate), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func clickAccelerateUpInside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickAccelerateUpOutside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickSlowDownDown(_ sender: UIButton) {
+        serial.sendMessageToDevice("b")
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.repeatSlowDown), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func clickSlowDownUpInside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
+    }
+    
+    @IBAction func clickSlowDownUpOutside(_ sender: UIButton) {
+        timer.invalidate()
+        stop()
     }
     
     func showBackButton() {
